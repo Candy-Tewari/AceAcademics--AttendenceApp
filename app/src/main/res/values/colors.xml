@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="appBackground">#E6E6E6</color>
+    <color name="appBackground2">#80323232</color>
+    <color name="buttonTextColor">#FFFFFF</color>
+    <color name="buttonGreenColor">#4CAF50</color>
+    <color name="custom_round_buttom">#BFFF574B</color>
+</resources>

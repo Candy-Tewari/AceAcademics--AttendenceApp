@@ -1,0 +1,326 @@
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer"
+    android:background="@color/appBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Subject"
+            android:textAllCaps="true"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:id="@+id/subjectId"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".Attendence">
+
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="212dp"
+                    android:layout_height="31dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="40dp"
+                    android:text="Total Classes"
+                    android:textSize="17.5dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/editText9"
+                    android:layout_width="65dp"
+                    android:layout_height="31dp"
+                    android:layout_marginStart="52dp"
+                    android:background="@drawable/corner"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:maxLength="3"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView19"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/textView19"
+                    app:layout_constraintTop_toTopOf="@+id/textView19"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="212dp"
+                    android:layout_height="31dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Total attended"
+                    android:textSize="17.5dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+                <EditText
+                    android:id="@+id/editText10"
+                    android:layout_width="65dp"
+                    android:layout_height="31dp"
+                    android:layout_marginStart="52dp"
+                    android:background="@drawable/corner"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:maxLength="3"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView20"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/textView20"
+                    app:layout_constraintTop_toTopOf="@+id/textView20"
+                    app:layout_constraintVertical_bias="0.0" />
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView20">
+
+                    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                        android:id="@+id/circularProgressBar"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="105dp"
+                        android:layout_marginEnd="105dp"
+                        app:cpb_background_progressbar_color="#b6bbd8"
+                        app:cpb_background_progressbar_width="5dp"
+                        app:cpb_progress_direction="to_right"
+                        app:cpb_progressbar_color="#3f51b5"
+                        app:cpb_progressbar_width="10dp"
+                        app:cpb_round_border="false"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="87dp"
+                        android:layout_height="49dp"
+                        android:layout_marginTop="76dp"
+                        android:gravity="center"
+                        android:text="100%"
+                        android:textSize="25dp"
+                        app:layout_constraintEnd_toEndOf="@+id/circularProgressBar"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="@+id/circularProgressBar"
+                        app:layout_constraintTop_toTopOf="@+id/circularProgressBar" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="28dp"
+                    android:background="@android:color/black"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
+                    tools:layout_editor_absoluteX="0dp" />
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="212dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="28dp"
+                    android:text="Set an expectational percentage for this subject"
+                    android:textSize="17.5dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+                <EditText
+                    android:id="@+id/editText11"
+                    android:layout_width="70dp"
+                    android:layout_height="31dp"
+                    android:layout_marginStart="52dp"
+                    android:background="@drawable/corner"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:textSize="17.5dp"
+                    android:maxLength="5"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView22"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/textView22"
+                    app:layout_constraintTop_toTopOf="@+id/textView22"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="214dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Give me push notification when attendence is lower than expected percentage"
+                    android:textSize="17.5dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+                <Switch
+                    android:id="@+id/switch1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:text="OFF   "
+                    app:layout_constraintBottom_toBottomOf="@+id/textView23"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.033"
+                    app:layout_constraintStart_toEndOf="@+id/textView23"
+                    app:layout_constraintTop_toTopOf="@+id/textView23"
+                    app:layout_constraintVertical_bias="0.512" />
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="341dp"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="24dp"
+                    android:gravity="center"
+                    android:text="Edit days on which the classes occurs or the days you need push notification"
+                    android:textSize="17.5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.351"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout"
+                    android:layout_width="297dp"
+                    android:layout_height="181dp"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="48dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.136"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView24">
+
+
+                    <Switch
+                        android:id="@+id/switch2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Monday         "
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Switch
+                        android:id="@+id/switch3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Tuesday        "
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/switch2" />
+
+                    <Switch
+                        android:id="@+id/switch4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Wednesday   "
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/switch3" />
+
+                    <Switch
+                        android:id="@+id/switch5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Thursday   "
+                        app:layout_constraintStart_toEndOf="@+id/switch2"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Switch
+                        android:id="@+id/switch6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Friday        "
+                        app:layout_constraintStart_toEndOf="@+id/switch3"
+                        app:layout_constraintTop_toBottomOf="@+id/switch5" />
+
+                    <Switch
+                        android:id="@+id/switch7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="36dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Saturday   "
+                        app:layout_constraintStart_toEndOf="@+id/switch4"
+                        app:layout_constraintTop_toBottomOf="@+id/switch6" />
+
+                    <Switch
+                        android:id="@+id/switch8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Sunday      "
+                        app:layout_constraintStart_toStartOf="@+id/switch7"
+                        app:layout_constraintTop_toBottomOf="@+id/switch7" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@color/buttonGreenColor"
+                    android:onClick="saveAllData"
+                    android:text="SAVE"
+                    android:textColor="@color/buttonTextColor"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:background="@color/appBackground"
+        app:headerLayout="@layout/header"
+        android:id="@+id/navigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:menu="@menu/navigationbarmenu"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>

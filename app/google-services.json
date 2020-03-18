@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1024547484284",
+    "firebase_url": "https://aceacademics-ff3a0.firebaseio.com",
+    "project_id": "aceacademics-ff3a0",
+    "storage_bucket": "aceacademics-ff3a0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1024547484284:android:976a8f8989ff1fa62ecff9",
+        "android_client_info": {
+          "package_name": "com.rocketapp.aceacademics"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1024547484284-6a293kvp8h0caks8r8omu8mk21jg5nc8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rocketapp.aceacademics",
+            "certificate_hash": "d4a884890257d0983047021b629f6e7f5dd2f84d"
+          }
+        },
+        {
+          "client_id": "1024547484284-98vtonelcbv2ifqks53i1omjol9rq5gf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvgArbUMXRr0gXrDjAi7gFLcfeKVxLaJw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1024547484284-98vtonelcbv2ifqks53i1omjol9rq5gf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
